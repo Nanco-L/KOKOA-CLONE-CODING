@@ -6,8 +6,6 @@ body {
 
 .status-bar {
     display: flex;
-    /* justify-content: space-between; -> /* 
-    /* contents의 크기가 다르면 가운데 item이 정가운데가 아닐 수 있음*/
     justify-content: center;
 }
 .status-bar__column {
