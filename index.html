@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to Kokoa Talk</title>
+    </head>
+    <body>
+        <div class="status-bar">
+            <!-- NOTE: class 이름 사이에 __를 넣는게 convention인가? -->
+            <!-- father__child -->
+            <!-- Block Element Modifier (BEM) -->
+            <!-- 모든 부분에 클래스? id 사용 X -->
+            <div class="status-bar__column">
+                <span>No service</span>
+                <!-- Wifi icon -->
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>11%</span>
+                <!-- Battery icon -->
+                <i class="fa-solid fa-battery-quarter"></i>
+                <!-- Lightning icon -->
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+        </div>
+        <!-- Script는 항상 body 끝에 -->
+        <script
+            src="https://kit.fontawesome.com/c36f3095ad.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
