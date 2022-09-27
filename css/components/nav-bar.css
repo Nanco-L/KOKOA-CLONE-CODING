@@ -12,5 +12,27 @@
     justify-content: space-between;
 }
 .nav-bar__link {
-    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.nav-bar__notification {
+    background-color: tomato;
+    display: flex;
+    position: absolute;
+}
+.nav-bar__notification-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    left: 20px;
+    bottom: 10px;
+}
+.nav-bar__notification-small {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    left: 30px;
 }
