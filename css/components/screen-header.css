@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
+    margin-bottom: 15px;
 }
 .screen-header__title {
     font-size: 32px;
@@ -10,4 +11,14 @@
 }
 .screen-header__icon {
     margin-left: 25px;
+}
+.screen-header__icon-relative {
+    position: relative;
+}
+.screen-header__notification-small {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    left: 22px;
+    bottom: 16px;
 }
