@@ -1,0 +1,160 @@
+.chat-screen {
+    background-color: #abc1d1;
+    height: 500vh;
+}
+.chat-screen .status-bar {
+    background-color: #abc1d1;
+}
+.chat-screen .alt-header {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #abc1d1;
+}
+@keyframes fadeIn {
+    0% {
+        transform: none;
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+.main-chat {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s linear;
+    /* animation-delay: 0.1s; */
+}
+.chat__timestamp {
+    background-color: #92a4b2;
+    border-radius: 50px;
+    padding: 8px 15px;
+    color: white;
+    font-size: 14px;
+}
+.message-row {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+}
+.message-row-outcome {
+    justify-content: flex-end;
+}
+.message-row-outcome .message__info {
+    flex-direction: row-reverse;
+}
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+.message__author {
+    display: block;
+    opacity: 0.8;
+    font-size: 13px;
+    margin: 5px 0;
+}
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+.message__bubble {
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.message__time {
+    font-size: 10px;
+    opacity: 0.8;
+}
+.message__bubble-income {
+    background-color: white;
+    border-top-left-radius: 0%;
+    margin-right: 5px;
+}
+.message__bubble-outcome {
+    background-color: var(--yellow);
+    border-top-right-radius: 0%;
+    margin-left: 5px;
+}
+.reply {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+/* TODO: fix first-child's width and last-child's width can be changable */
+.reply .reply__column:first-child {
+    width: 10%;
+}
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+    padding-right: 15px;
+}
+.reply input {
+    padding: 10px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+    position: absolute;
+}
+.reply i {
+    opacity: 0.8;
+}
+.reply__column:last-child > i {
+    right: 40px;
+    top: 18px;
+}
+.reply__column button {
+    background-color: var(--yellow);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    right: -3px;
+    top: 4px;
+}
+.reply__column button > i {
+    opacity: 1;
+}
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
+}
+.reply .reply__column:first-child,
+.reply .fa-face-laugh-squint,
+.reply button {
+    transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-laugh-squint,
+.reply:focus-within button {
+    opacity: 0;
+}
+.reply input:focus {
+    width: 110%;
+    transform: translateX(-10%) translateY(-80px);
+}
+.reply:focus-within {
+    transform: translateY(80px);
+}

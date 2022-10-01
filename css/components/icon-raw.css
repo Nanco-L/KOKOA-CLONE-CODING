@@ -1,0 +1,24 @@
+.icon-raw {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-raw--margin-top {
+    margin-top: 50px;
+}
+.icon-raw__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-raw__icon span {
+    text-align: center;
+    margin-top: 18px;
+    display: block;
+    width: 100px;
+}
+.icon-raw__icon--transparent {
+    opacity: 0;
+}
+.icon-raw__icon img {
+    display: block;
+}
